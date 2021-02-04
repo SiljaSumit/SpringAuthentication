@@ -1,0 +1,13 @@
+User Authentication and Authorization on Spring Boot
+
+To support both authentication and authorization, we 
+
+   -> implemented an authentication filter to issue JWTS to users sending credentials,
+   -> implemented an authorization filter to validate requests containing JWTS,
+   -> created a custom implementation of UserDetailsService to help Spring Security loading user-specific data in the framework,
+   -> extended the WebSecurityConfigurerAdapter class to customize the security framework to our needs.
+
+   
+   References
+   	https://auth0.com/blog/implementing-jwt-authentication-on-spring-boot/
+   	https://medium.com/@xoor/jwt-authentication-service-44658409e12c
