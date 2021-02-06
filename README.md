@@ -12,7 +12,7 @@ To support both authentication and authorization, we
     1. Make sure you have Java 8, Maven and mysql installed.
     
     2. Fork this repository and clone it
-       $ git clone https://github.com/SiljaSumit/SpringAuthentication/
+       $ git clone https://github.com/<your-user>/SpringAuthentication/
       
     3. Execute all the queries given in JwtAuth/src/main/resources/schema.sql to create database and tables.
     
