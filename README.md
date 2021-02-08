@@ -1,11 +1,12 @@
 # SpringAuthentication   
 
-To support both authentication and authorization, we 
+To support both authentication and authorization,  
 
    1. implemented an authentication filter named **JwtAuthenticationFilter** to issue JWTS to users sending credentials.
    2. implemented an authorization filter named **JwtAuthorizationFilter** to validate requests containing JWTS.
    3. created a custom implementation of UserDetailsService named **JwtUserDetailService** to help spring security loading user-specific data in the framework.
-   4. extended the WebSecurityConfigurerAdapter class to customize the security framework to our needs.
+   4. created a token provider named **JwtTokenProvider** which will generate and validate the tokens.
+   5. extended the WebSecurityConfigurerAdapter class to customize the security framework to our needs.
    
 ## How to use this code? 
 
@@ -41,7 +42,7 @@ To support both authentication and authorization, we
 		{"userName":"admin",
 		"token":"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImF1dGgiOlt7ImF1dGhvcml0eSI6IlJPTEVfVVNFUiJ9XSwiaWF0IjoxNjEyNzM4ODYwLCJleHAiOjE2MTI4MjUyNjB9.mZCfyA9JN1feUQzA9plUjcJYQY13Sa5dbcNKK2yQjeEm3hihYcyqlmM2omxIjGYR27zi2ChL47myNZWAT0kZPw"}
 
-	# log into the application (JWT is generated)
+	# login to the application (JWT is generated)
 		curl -i -H "Content-Type: application/json" -X POST -d '{
 		    "username": "admin",
 		    "password": "adminpassword"
@@ -50,10 +51,10 @@ To support both authentication and authorization, we
 		HTTP/1.1 200
 		Authorization: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImF1dGgiOlt7ImF1dGhvcml0eSI6IlJPTEVfVVNFUiJ9XSwiaWF0IjoxNjEyNzM4OTc4LCJleHAiOjE2MTI4MjUzNzh9.yfNoJIyoNETFCOkP_h6drJ5ayTS648V4MQufIgOjtQ_DYJ4TTsrozEMuJpWjx4MT03zOxNjsNBN_7WVDulBlWA
 
-	# create a variable with our token
+	# create a variable with the token
 		ACCESS_TOKEN=<OUR_ACCESS_TOKEN>
 	
-	# use this variable to fetch contacts
+	# use this variable to send the credentials in further requests
 		curl -H 'Authorization: Bearer '$ACCESS_TOKEN http://localhost:8080/users/hello
 	
 		Hello
