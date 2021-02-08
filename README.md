@@ -59,9 +59,10 @@ To support both authentication and authorization, we
 		Hello
 
 ## References
-   	https://auth0.com/blog/implementing-jwt-authentication-on-spring-boot/
+[https://auth0.com/blog/implementing-jwt-authentication-on-spring-boot/](https://auth0.com/blog/implementing-jwt-authentication-on-spring-boot/)
    	
-   	https://medium.com/@xoor/jwt-authentication-service-44658409e12c
+[https://medium.com/@xoor/jwt-authentication-service-44658409e12c](https://medium.com/@xoor/jwt-authentication-service-44658409e12c)
+   	
 
 
 
