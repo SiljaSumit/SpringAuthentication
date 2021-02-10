@@ -1,4 +1,4 @@
-package com.auth.service;
+package com.auth.JwtAuth.service;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -11,8 +11,8 @@ import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.auth.model.UserEntity;
-import com.auth.repository.UserRepository;
+import com.auth.JwtAuth.model.UserEntity;
+import com.auth.JwtAuth.repository.UserRepository;
 
 @Service
 public class JwtUserDetailService implements UserDetailsService {

@@ -1,4 +1,4 @@
-package com.auth.controller;
+package com.auth.JwtAuth.controller;
 
 import javax.validation.Valid;
 
@@ -11,9 +11,9 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.auth.dto.RequestDto;
-import com.auth.dto.ResponseDto;
-import com.auth.service.UserService;
+import com.auth.JwtAuth.dto.RequestDto;
+import com.auth.JwtAuth.dto.ResponseDto;
+import com.auth.JwtAuth.service.UserService;
 
 @RestController
 @RequestMapping("/users")

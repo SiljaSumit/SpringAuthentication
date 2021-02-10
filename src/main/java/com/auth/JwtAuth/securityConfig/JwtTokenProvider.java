@@ -1,4 +1,4 @@
-package com.auth.securityConfig;
+package com.auth.JwtAuth.securityConfig;
 
 import java.util.Base64;
 import java.util.Date;

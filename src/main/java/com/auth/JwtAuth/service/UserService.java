@@ -1,4 +1,4 @@
-package com.auth.service;
+package com.auth.JwtAuth.service;
 
 public interface UserService {
 	public String signUp(String username, String password);

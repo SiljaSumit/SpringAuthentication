@@ -1,4 +1,4 @@
-package com.auth.service;
+package com.auth.JwtAuth.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -6,10 +6,10 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.auth.exceptions.CustomException;
-import com.auth.model.UserEntity;
-import com.auth.repository.UserRepository;
-import com.auth.securityConfig.JwtTokenProvider;
+import com.auth.JwtAuth.exceptions.CustomException;
+import com.auth.JwtAuth.model.UserEntity;
+import com.auth.JwtAuth.repository.UserRepository;
+import com.auth.JwtAuth.securityConfig.JwtTokenProvider;
 
 @Service
 public class UserServiceImpl implements UserService {

@@ -1,4 +1,4 @@
-package com.auth.securityConfig;
+package com.auth.JwtAuth.securityConfig;
 
 import static org.springframework.http.HttpStatus.UNAUTHORIZED;
 import static org.springframework.http.MediaType.APPLICATION_JSON_VALUE;
@@ -31,8 +31,8 @@ import org.springframework.security.web.AuthenticationEntryPoint;
 import org.springframework.security.web.authentication.SimpleUrlAuthenticationFailureHandler;
 import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
 
-import com.auth.exceptions.ExceptionResponse;
-import com.auth.service.JwtUserDetailService;
+import com.auth.JwtAuth.exceptions.ExceptionResponse;
+import com.auth.JwtAuth.service.JwtUserDetailService;
 
 @Configuration
 @EnableWebSecurity

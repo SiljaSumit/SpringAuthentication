@@ -1,4 +1,4 @@
-package com.auth.application;
+package com.auth.JwtAuth;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -7,9 +7,6 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 @SpringBootApplication
-@EntityScan(basePackages = {"com.auth.model"} )
-@EnableJpaRepositories(basePackages = {"com.auth.repository"})
-@ComponentScan(basePackages = {"com.auth"})
 public class JwtAuthApplication {
 
 	public static void main(String[] args) {

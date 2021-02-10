@@ -1,4 +1,4 @@
-package com.auth.exceptions;
+package com.auth.JwtAuth.exceptions;
 
 public class CustomException extends RuntimeException {
 

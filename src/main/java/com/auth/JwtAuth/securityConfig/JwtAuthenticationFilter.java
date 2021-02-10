@@ -1,4 +1,4 @@
-package com.auth.securityConfig;
+package com.auth.JwtAuth.securityConfig;
 
 import java.io.IOException;
 
@@ -16,7 +16,7 @@ import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 
-import com.auth.dto.RequestDto;
+import com.auth.JwtAuth.dto.RequestDto;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 public class JwtAuthenticationFilter extends UsernamePasswordAuthenticationFilter {

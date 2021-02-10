@@ -1,4 +1,4 @@
-package com.auth.exceptions;
+package com.auth.JwtAuth.exceptions;
 
 import java.time.LocalDateTime;
 import java.time.ZoneOffset;

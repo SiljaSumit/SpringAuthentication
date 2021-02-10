@@ -1,4 +1,4 @@
-package com.auth.securityConfig;
+package com.auth.JwtAuth.securityConfig;
 
 import java.io.IOException;
 
@@ -17,7 +17,7 @@ import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.web.AuthenticationEntryPoint;
 import org.springframework.security.web.authentication.www.BasicAuthenticationFilter;
 
-import com.auth.service.JwtUserDetailService;
+import com.auth.JwtAuth.service.JwtUserDetailService;
 
 /**
  * Processes a HTTP request's BASIC authorization headers, putting the result
